@@ -24,6 +24,7 @@
   },
   "files": [
     "bin/",
+    "scripts/",
     "install.sh",
     "share/",
     "README.md",
