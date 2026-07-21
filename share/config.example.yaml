@@ -1,0 +1,29 @@
+# Example CLIProxyAPI config used by claudex.
+# Installed copy lives at ~/.cli-proxy-api/config.yaml (written by `claudex setup`).
+
+host: "127.0.0.1"
+port: 8317
+auth-dir: "~/.cli-proxy-api"
+
+api-keys:
+  - "sk-claudex-local"
+
+debug: false
+logging-to-file: false
+request-retry: 3
+
+remote-management:
+  allow-remote: false
+  secret-key: ""
+  disable-control-panel: true
+
+quota-exceeded:
+  switch-project: true
+  switch-preview-model: true
+
+routing:
+  strategy: "round-robin"
+  session-affinity: true
+  session-affinity-ttl: "1h"
+
+proxy-url: ""

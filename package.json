@@ -1,0 +1,43 @@
+{
+  "name": "claudex",
+  "version": "0.1.0",
+  "description": "Launch Claude Code with Codex models via local CLIProxyAPI",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "cliproxyapi",
+    "openai",
+    "cli"
+  ],
+  "homepage": "https://github.com/Micuks/claudex",
+  "bugs": {
+    "url": "https://github.com/Micuks/claudex/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Micuks/claudex.git"
+  },
+  "license": "MIT",
+  "author": "Micuks",
+  "bin": {
+    "claudex": "bin/claudex"
+  },
+  "files": [
+    "bin/",
+    "install.sh",
+    "share/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "test": "bash -n bin/claudex && bash -n install.sh"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ]
+}
